@@ -1,6 +1,7 @@
 import { MutexFastLockConfig } from './models/mutex-fast-lock-config';
 import { MutexLockStats } from './models/mutex-lock-stats';
 import { Observable } from 'rxjs';
+import * as i0 from "@angular/core";
 export declare class MutexFastLockService {
     private readonly _config;
     private _clientId;
@@ -22,4 +23,6 @@ export declare class MutexFastLockService {
      */
     private _getItem;
     private _releaseExpiredLock;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MutexFastLockService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<MutexFastLockService>;
 }

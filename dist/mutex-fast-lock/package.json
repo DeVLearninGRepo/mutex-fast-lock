@@ -1,14 +1,15 @@
 {
   "name": "@devlearning/mutex-fast-lock",
   "version": "1.0.4",
+  "type": "module",
   "peerDependencies": {
-    "@angular/common": "^12.2.3",
-    "@angular/core": "^12.2.3"
+    "@angular/common": "15.1.2",
+    "@angular/core": "15.1.2"
   },
   "dependencies": {
-    "tslib": "^2.1.0"
+    "tslib": "2.5.0"
   },
-  "description": "Mutex fast lock localstorage.",
+  "description": "Mutex fast lock localstorage",
   "author": "Luca Evaroni",
   "license": "MIT",
   "bugs": {
@@ -21,12 +22,27 @@
     "LocalStorage",
     "DeVLearninG"
   ],
-  "main": "bundles/devlearning-mutex-fast-lock.umd.js",
-  "module": "fesm2015/devlearning-mutex-fast-lock.js",
-  "es2015": "fesm2015/devlearning-mutex-fast-lock.js",
-  "esm2015": "esm2015/devlearning-mutex-fast-lock.js",
-  "fesm2015": "fesm2015/devlearning-mutex-fast-lock.js",
-  "typings": "devlearning-mutex-fast-lock.d.ts",
-  "metadata": "devlearning-mutex-fast-lock.metadata.json",
-  "sideEffects": false
+  "module": "fesm2015/devlearning-mutex-fast-lock.mjs",
+  "es2020": "fesm2020/devlearning-mutex-fast-lock.mjs",
+  "esm2020": "esm2020/devlearning-mutex-fast-lock.mjs",
+  "fesm2020": "fesm2020/devlearning-mutex-fast-lock.mjs",
+  "fesm2015": "fesm2015/devlearning-mutex-fast-lock.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/devlearning-mutex-fast-lock.mjs",
+      "es2020": "./fesm2020/devlearning-mutex-fast-lock.mjs",
+      "es2015": "./fesm2015/devlearning-mutex-fast-lock.mjs",
+      "node": "./fesm2015/devlearning-mutex-fast-lock.mjs",
+      "default": "./fesm2020/devlearning-mutex-fast-lock.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
 }

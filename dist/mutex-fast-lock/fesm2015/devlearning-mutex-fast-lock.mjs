@@ -174,15 +174,21 @@ class MutexFastLockService {
         }
     }
 }
-MutexFastLockService.ɵprov = i0.ɵɵdefineInjectable({ factory: function MutexFastLockService_Factory() { return new MutexFastLockService(i0.ɵɵinject(MUTEX_FAST_LOCK_CONFIG)); }, token: MutexFastLockService, providedIn: "root" });
-MutexFastLockService.decorators = [
-    { type: Injectable, args: [{
-                providedIn: 'root'
-            },] }
-];
-MutexFastLockService.ctorParameters = () => [
-    { type: MutexFastLockConfig, decorators: [{ type: Inject, args: [MUTEX_FAST_LOCK_CONFIG,] }] }
-];
+MutexFastLockService.ɵfac = function MutexFastLockService_Factory(t) { return new (t || MutexFastLockService)(i0.ɵɵinject(MUTEX_FAST_LOCK_CONFIG)); };
+MutexFastLockService.ɵprov = /*@__PURE__*/ i0.ɵɵdefineInjectable({ token: MutexFastLockService, factory: MutexFastLockService.ɵfac, providedIn: 'root' });
+(function () {
+    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(MutexFastLockService, [{
+            type: Injectable,
+            args: [{
+                    providedIn: 'root'
+                }]
+        }], function () {
+        return [{ type: MutexFastLockConfig, decorators: [{
+                        type: Inject,
+                        args: [MUTEX_FAST_LOCK_CONFIG]
+                    }] }];
+    }, null);
+})();
 
 class MutexFastLockModule {
     static forRoot(config) {
@@ -194,9 +200,14 @@ class MutexFastLockModule {
         });
     }
 }
-MutexFastLockModule.decorators = [
-    { type: NgModule }
-];
+MutexFastLockModule.ɵfac = function MutexFastLockModule_Factory(t) { return new (t || MutexFastLockModule)(); };
+MutexFastLockModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: MutexFastLockModule });
+MutexFastLockModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({});
+(function () {
+    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(MutexFastLockModule, [{
+            type: NgModule
+        }], null, null);
+})();
 
 /*
  * Public API Surface of cnet-mutex-fast-lock
@@ -206,5 +217,5 @@ MutexFastLockModule.decorators = [
  * Generated bundle index. Do not edit.
  */
 
-export { MutexFastLockConfig, MutexFastLockModule, MutexFastLockService, MutexLockStats, MUTEX_FAST_LOCK_CONFIG as ɵa };
-//# sourceMappingURL=devlearning-mutex-fast-lock.js.map
+export { MutexFastLockConfig, MutexFastLockModule, MutexFastLockService, MutexLockStats };
+//# sourceMappingURL=devlearning-mutex-fast-lock.mjs.map

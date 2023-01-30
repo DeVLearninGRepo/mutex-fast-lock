@@ -1,14 +1,15 @@
 {
-  "name": "@devlearning/mutex-fast-lock",
-  "version": "1.0.4",
-  "peerDependencies": {
-    "@angular/common": "^12.2.3",
-    "@angular/core": "^12.2.3"
-  },
-  "dependencies": {
-    "tslib": "^2.1.0"
-  },
-  "description": "Mutex fast lock localstorage.",
+    "name": "@devlearning/mutex-fast-lock",
+    "version": "1.0.4",
+    "type": "module",
+    "peerDependencies": {
+        "@angular/common": "15.1.2",
+        "@angular/core": "15.1.2"
+    },
+    "dependencies": {
+        "tslib": "2.5.0"
+    },
+    "description": "Mutex fast lock localstorage",
     "author": "Luca Evaroni",
     "license": "MIT",
     "bugs": {
