@@ -1,6 +1,6 @@
 {
   "name": "@devlearning/mutex-fast-lock",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "peerDependencies": {
     "@angular/common": "15.1.2",
@@ -41,8 +41,5 @@
       "default": "./fesm2020/devlearning-mutex-fast-lock.mjs"
     }
   },
-  "sideEffects": false,
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }

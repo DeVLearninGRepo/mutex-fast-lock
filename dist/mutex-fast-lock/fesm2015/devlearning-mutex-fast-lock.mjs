@@ -174,21 +174,19 @@ class MutexFastLockService {
         }
     }
 }
-MutexFastLockService.ɵfac = function MutexFastLockService_Factory(t) { return new (t || MutexFastLockService)(i0.ɵɵinject(MUTEX_FAST_LOCK_CONFIG)); };
-MutexFastLockService.ɵprov = /*@__PURE__*/ i0.ɵɵdefineInjectable({ token: MutexFastLockService, factory: MutexFastLockService.ɵfac, providedIn: 'root' });
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(MutexFastLockService, [{
+MutexFastLockService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockService, deps: [{ token: MUTEX_FAST_LOCK_CONFIG }], target: i0.ɵɵFactoryTarget.Injectable });
+MutexFastLockService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockService, decorators: [{
             type: Injectable,
             args: [{
                     providedIn: 'root'
                 }]
-        }], function () {
+        }], ctorParameters: function () {
         return [{ type: MutexFastLockConfig, decorators: [{
                         type: Inject,
                         args: [MUTEX_FAST_LOCK_CONFIG]
                     }] }];
-    }, null);
-})();
+    } });
 
 class MutexFastLockModule {
     static forRoot(config) {
@@ -200,14 +198,12 @@ class MutexFastLockModule {
         });
     }
 }
-MutexFastLockModule.ɵfac = function MutexFastLockModule_Factory(t) { return new (t || MutexFastLockModule)(); };
-MutexFastLockModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: MutexFastLockModule });
-MutexFastLockModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({});
-(function () {
-    (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(MutexFastLockModule, [{
+MutexFastLockModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+MutexFastLockModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockModule });
+MutexFastLockModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockModule });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.1.2", ngImport: i0, type: MutexFastLockModule, decorators: [{
             type: NgModule
-        }], null, null);
-})();
+        }] });
 
 /*
  * Public API Surface of cnet-mutex-fast-lock

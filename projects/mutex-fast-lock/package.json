@@ -1,6 +1,6 @@
 {
     "name": "@devlearning/mutex-fast-lock",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "type": "module",
     "peerDependencies": {
         "@angular/common": "15.1.2",

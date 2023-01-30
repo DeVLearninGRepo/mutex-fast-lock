@@ -9,8 +9,8 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "build:prod": "ng build --configuration production",
-        "publish1": "npm run build:prod mutex-fast-lock && cd dist\\mutex-fast-lock && npm publish"
+        "build:prod": "ng build mutex-fast-lock  --configuration production",
+        "publish1": "npm run build:prod && cd dist\\mutex-fast-lock && npm publish"
     },
     "dependencies": {
         "@angular/common": "15.1.2",
