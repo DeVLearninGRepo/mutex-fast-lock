@@ -51,12 +51,15 @@
             "prefix": "app",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-angular:browser",
+                    "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/app",
+                        "outputPath": {
+                          "base": "dist/app"
+                        },
                         "index": "projects/app/src/index.html",
-                        "main": "projects/app/src/main.ts",
-                        "polyfills": "projects/app/src/polyfills.ts",
+                        "polyfills": [
+                          "projects/app/src/polyfills.ts"
+                        ],
                         "tsConfig": "projects/app/tsconfig.app.json",
                         "assets": [
                             "projects/app/src/favicon.ico",
@@ -66,12 +69,11 @@
                             "projects/app/src/styles.css"
                         ],
                         "scripts": [],
-                        "vendorChunk": true,
                         "extractLicenses": false,
-                        "buildOptimizer": false,
                         "sourceMap": true,
                         "optimization": false,
-                        "namedChunks": true
+                        "namedChunks": true,
+                        "browser": "projects/app/src/main.ts"
                     },
                     "configurations": {
                         "production": {
@@ -84,8 +86,6 @@
                             "sourceMap": false,
                             "namedChunks": false,
                             "extractLicenses": true,
-                            "vendorChunk": false,
-                            "buildOptimizer": true,
                             "budgets": [{
                                     "type": "initial",
                                     "maximumWarning": "2mb",
@@ -104,18 +104,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "app:build"
+                      "buildTarget": "app:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "app:build:production"
+                          "buildTarget": "app:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "app:build"
+                      "buildTarget": "app:build"
                     }
                 },
                 "test": {

@@ -1,6 +1,6 @@
 {
   "name": "@devlearning/mutex-fast-lock",
-  "version": "17.3.7",
+  "version": "19.2.1",
   "type": "module",
   "scripts": {
     "ng": "ng",
@@ -13,16 +13,16 @@
     "deploy": "npm run build:prod && cd dist\\mutex-fast-lock && npm publish"
   },
   "dependencies": {
-    "@angular/common": "^18.2.13",
-    "@angular/core": "^18.2.13",
-    "@angular/compiler": "^18.2.13",
+    "@angular/common": "^19.2.1",
+    "@angular/core": "^19.2.1",
+    "@angular/compiler": "^19.2.1",
     "rxjs": "^7.5.0",
     "tslib": "2.5.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.14",
-    "@angular/cli": "^18.2.14",
-    "@angular/compiler-cli": "^18.2.13",
+    "@angular-devkit/build-angular": "^19.2.1",
+    "@angular/cli": "^19.2.1",
+    "@angular/compiler-cli": "^19.2.1",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
@@ -30,7 +30,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "ng-packagr": "18.2.1",
-    "typescript": "~5.4.5"
+    "ng-packagr": "19.2.0",
+    "typescript": "~5.8.2"
   }
 }
